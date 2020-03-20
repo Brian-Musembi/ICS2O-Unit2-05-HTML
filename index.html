@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My Webpage">
+    <meta name="keywordss" content="Hello, World! website">
+    <meta name="author" content="Brian Musembi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+  </head>
+  <body>
+     <h1 align="center">Area of a square in Brian's Webpage</h1>
+   <p id="area_status"></p>
+   <p><label>Enter The Length Of The Square</label></p>
+   <p><input id="squareLength" type="text" placeholder="Length of Sqaure" /></p>
+   <p><button onclick="areaofsquare()">calculate</button></p>
+    <script>
+     let squareLength;
+     let squareArea;
+     
+     function areaofsquare(){
+      let squareLength = document.getElementById("squareLength").value;
+      let squareArea = squareLength*squareLength;
+      document.getElementById("area_status").innerHTML="The area of the square is "+squareArea;}
+    </script>
+  </body>
+</html>
